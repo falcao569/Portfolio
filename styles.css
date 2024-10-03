@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -11,15 +12,37 @@ body {
     color: #333;
 }
 
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
 header {
     background-color: #333;
     color: #fff;
     padding: 1rem 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    flex: 1;
+    text-align: left;
+}
+
+.header-center {
+    flex: 2;
     text-align: center;
 }
 
-header h1 {
-    font-size: 2.5rem;
+.header-right {
+    flex: 1;
+    text-align: right;
 }
 
 header nav ul {
@@ -38,14 +61,153 @@ header nav ul li a {
     font-weight: bold;
 }
 
-.section {
-    padding: 2rem 0;
+/* About Section */
+.about-section {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.about-container {
     text-align: center;
 }
 
-.container {
+/* Know More Section */
+.know-more-section {
+    position: relative;
+    padding: 2rem 0;
+}
+
+.overlay-title {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 8rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.05);
+    z-index: -1;
+}
+
+.dev-name {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.know-more-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.left {
+    width: 50%;
+}
+
+.left h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.left p {
+    margin-bottom: 1.5rem;
+}
+
+.left button {
+    padding: 10px 20px;
+    border: 2px solid #333;
+    background-color: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.left button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.media-box {
     width: 80%;
-    margin: 0 auto;
+    height: auto;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.media-box img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Skills Section Styles */
+.skills-section {
+    padding: 120px 0; /* Padding ajustado */
+    text-align: center;
+}
+
+.skills-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espaço entre os boxes */
+}
+
+.skill-box {
+    position: relative;
+    width: 250px; /* Ajuste a largura conforme necessário */
+    overflow: hidden; /* Para esconder o contorno */
+    border-radius: 10px; /* Borda arredondada */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.skill-box h3 {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    color: #fff; /* Altere a cor conforme necessário */
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.skill-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+}
+
+/* Other Section Styles */
+.section {
+    padding: 120px 0; /* Padding ajustado para seções a partir da terceira */
+    text-align: center;
 }
 
 h2 {
@@ -53,37 +215,7 @@ h2 {
     margin-bottom: 1rem;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-.project, .job, .testimonial {
-    margin-bottom: 2rem;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-form input, form textarea {
-    width: 100%;
-    max-width: 400px;
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-}
-
-form button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
+/* Footer */
 footer {
     background-color: #333;
     color: #fff;

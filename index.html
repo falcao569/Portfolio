@@ -13,10 +13,11 @@
 
   <!-- Header Section -->
   <header>
-    <div class="container">
-      <h1>John Doe</h1>
-      <p>Full Stack Developer</p>
-      <nav>
+    <div class="container header-container">
+      <div class="header-left">
+        <h1>John Doe</h1>
+      </div>
+      <nav class="header-center">
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -27,29 +28,62 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <div class="header-right">
+        <p>Full Stack Developer</p>
+      </div>
     </div>
   </header>
 
   <!-- About Section -->
-  <section id="about" class="section">
-    <div class="container">
+  <section id="about" class="section about-section">
+    <div class="container about-container">
       <h2>About Me</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel justo at mauris vulputate tempus.</p>
     </div>
   </section>
 
+  <!-- Know More Section -->
+  <section id="know-more" class="section know-more-section">
+    <div class="overlay-title">CONHEÇA MAIS</div>
+    <h2 class="dev-name">John Doe</h2>
+
+    <div class="container know-more-container">
+      <div class="left">
+        <h3>Explore My Work</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel justo at mauris vulputate tempus. Cras
+          aliquet ligula non purus feugiat tincidunt.</p>
+        <button>Learn More</button>
+      </div>
+      <div class="right">
+        <div class="media-box">
+          <img src="https://via.placeholder.com/400" alt="Portfolio Media">
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Skills Section -->
-  <section id="skills" class="section">
+  <section id="skills" class="section skills-section">
     <div class="container">
-      <h2>Skills</h2>
-      <ul>
-        <li>JavaScript</li>
-        <li>React.js</li>
-        <li>Node.js</li>
-        <li>Python</li>
-        <li>SQL</li>
-        <li>Git & GitHub</li>
-      </ul>
+      <h2 class="skills-title">My Skills</h2>
+      <div class="skills-container">
+        <div class="skill-box">
+          <img src="https://via.placeholder.com/250" alt="Project 1">
+          <h3>Project 1</h3>
+        </div>
+        <div class="skill-box">
+          <img src="https://via.placeholder.com/250" alt="Project 2">
+          <h3>Project 2</h3>
+        </div>
+        <div class="skill-box">
+          <img src="https://via.placeholder.com/250" alt="Project 3">
+          <h3>Project 3</h3>
+        </div>
+        <div class="skill-box">
+          <img src="https://via.placeholder.com/250" alt="Project 4">
+          <h3>Project 4</h3>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -57,14 +91,7 @@
   <section id="projects" class="section">
     <div class="container">
       <h2>Projects</h2>
-      <div class="project">
-        <h3>Project One</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div class="project">
-        <h3>Project Two</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
     </div>
   </section>
 
@@ -72,12 +99,7 @@
   <section id="services" class="section">
     <div class="container">
       <h2>Services</h2>
-      <ul>
-        <li>Web Development</li>
-        <li>App Development</li>
-        <li>API Integration</li>
-        <li>Consulting</li>
-      </ul>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
     </div>
   </section>
 
@@ -85,16 +107,7 @@
   <section id="experience" class="section">
     <div class="container">
       <h2>Experience</h2>
-      <div class="job">
-        <h3>Full Stack Developer</h3>
-        <p>Company XYZ | Jan 2021 - Present</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div class="job">
-        <h3>Frontend Developer</h3>
-        <p>Company ABC | Jun 2019 - Dec 2020</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
     </div>
   </section>
 
@@ -102,12 +115,7 @@
   <section id="testimonials" class="section">
     <div class="container">
       <h2>Testimonials</h2>
-      <div class="testimonial">
-        <p>"John is a fantastic developer with great attention to detail!" - Client A</p>
-      </div>
-      <div class="testimonial">
-        <p>"Highly recommend for any web development project!" - Client B</p>
-      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
     </div>
   </section>
 
@@ -115,12 +123,7 @@
   <section id="contact" class="section">
     <div class="container">
       <h2>Contact</h2>
-      <form id="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
     </div>
   </section>
 
