@@ -6,9 +6,9 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
     color: #333;
 }
 
@@ -19,9 +19,10 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem 0;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 1.5rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .header-container {
@@ -30,35 +31,32 @@ header {
     align-items: center;
 }
 
-.header-left {
-    flex: 1;
-    text-align: left;
+.header-left h1 {
+    font-size: 2rem;
 }
 
-.header-center {
-    flex: 2;
-    text-align: center;
+.header-center ul {
+    list-style: none;
+    display: flex;
+}
+
+.header-center ul li {
+    margin: 0 20px;
+}
+
+.header-center ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.header-center ul li a:hover {
+    color: #1abc9c;
 }
 
 .header-right {
-    flex: 1;
-    text-align: right;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-header nav ul li {
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 /* About Section */
@@ -67,17 +65,15 @@ header nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;
-}
-
-.about-container {
+    background-color: #ecf0f1;
     text-align: center;
 }
 
 /* Know More Section */
 .know-more-section {
     position: relative;
-    padding: 2rem 0;
+    padding: 4rem 0;
+    background-color: #fff;
 }
 
 .overlay-title {
@@ -87,21 +83,20 @@ header nav ul li a {
     transform: translateX(-50%);
     font-size: 8rem;
     font-weight: bold;
-    color: rgba(0, 0, 0, 0.05);
+    color: rgba(0, 0, 0, 0.1);
     z-index: -1;
 }
 
 .dev-name {
     text-align: center;
-    font-size: 2rem;
-    margin-bottom: 2rem;
+    font-size: 3rem;
+    margin-top: 2rem;
 }
 
 .know-more-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-align: left;
 }
 
 .left {
@@ -109,8 +104,9 @@ header nav ul li a {
 }
 
 .left h3 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
+    color: #2c3e50;
 }
 
 .left p {
@@ -119,16 +115,17 @@ header nav ul li a {
 
 .left button {
     padding: 10px 20px;
-    border: 2px solid #333;
-    background-color: transparent;
+    border: none;
+    background-color: #1abc9c;
+    color: #fff;
     border-radius: 20px;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .left button:hover {
-    background-color: #333;
-    color: #fff;
+    background-color: #16a085;
+    transform: translateY(-2px);
 }
 
 .right {
@@ -139,86 +136,135 @@ header nav ul li a {
 
 .media-box {
     width: 80%;
-    height: auto;
-    padding: 2rem;
-    background-color: rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .media-box img {
     max-width: 100%;
-    border-radius: 10px;
 }
 
 /* Skills Section Styles */
 .skills-section {
-    padding: 120px 0; /* Padding ajustado */
-    text-align: center;
+    padding: 120px 0;
+    background-color: #fff;
 }
 
 .skills-title {
     font-size: 2.5rem;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .skills-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Espaço entre os boxes */
+    gap: 20px;
 }
 
 .skill-box {
     position: relative;
-    width: 250px; /* Ajuste a largura conforme necessário */
-    overflow: hidden; /* Para esconder o contorno */
-    border-radius: 10px; /* Borda arredondada */
+    width: calc(25% - 20px);
+    overflow: hidden;
+    border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #f7f7f7;
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .skill-box img {
     width: 100%;
     height: auto;
-    display: block;
     border-radius: 10px;
 }
 
 .skill-box h3 {
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    right: 0;
-    color: #fff; /* Altere a cor conforme necessário */
-    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
-    padding: 10px;
-    margin: 0;
     text-align: center;
-    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 1.2rem;
 }
 
 .skill-box:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Other Section Styles */
-.section {
-    padding: 120px 0; /* Padding ajustado para seções a partir da terceira */
+.services-section {
+    padding: 120px 0;
+    background-color: #fff;
+    text-align: center; /* Centraliza o conteúdo da seção */
+}
+
+.services-title {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+    width: 100%; /* Mantém a largura de 100% */
+}
+
+/* Hierarchical Grid Styles */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* Define 12 colunas para a grid */
+    gap: 20px;
+}
+
+.service-box {
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustando os tamanhos dos itens */
+.service-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-box p {
+    font-size: 1rem;
+}
+
+/* Tamanhos variados para os itens */
+.service-box.large {
+    grid-column: span 6; /* Ocupa 6 colunas (metade da tela) */
+}
+
+.service-box.medium {
+    grid-column: span 4; /* Ocupa 4 colunas (um terço da tela) */
+}
+
+.service-box.small {
+    grid-column: span 2; /* Ocupa 2 colunas (um sexto da tela) */
+}
+
+
+.service-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #1abc9c;
     text-align: center;
 }
 
-h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+.service-box p {
+    color: #7f8c8d;
+    text-align: center;
 }
 
-/* Footer */
+/* Footer Styles */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #2c3e50;
+    color: #ecf0f1;
     text-align: center;
     padding: 1rem 0;
+    margin-top: 2rem;
 }
